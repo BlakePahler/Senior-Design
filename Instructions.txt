@@ -1,0 +1,12 @@
+How to change the file being used:
+sudo nano /home/pi/.bashrc
+Scroll to the bottom and write:
+sudo python /path/to/pi_file.py
+
+To make the LXTerminal open on boot type:
+sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@lxterminal
+This will ensure LXTerminal opens after start up
